@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "@emotion/styled";
 import logo from '../../assets/images/logo.svg'
+import Menu from "./MenuHead";
 const Root = styled.div`
 
 `
@@ -26,11 +27,10 @@ export default class Head extends React.Component{
     render(){
         return <Root>
             <DarkSide>
-                <img src={logo} />
-
+                <img src= {logo} />
             </DarkSide>
             <WhiteSide>
-
+                <Menu/>
             </WhiteSide>
         </Root>;
     }
