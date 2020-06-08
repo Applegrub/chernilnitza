@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from "@emotion/styled";
-import Head from "./Components/Head";
+import Header from "./Components/Header";
+import Body from "./Components/Body";
+import Footer from "./Components/Footer";
 
 const Root = styled.div`
 `
@@ -9,7 +11,9 @@ export default class App extends React.Component {
 
     render() {
         return <Root>
-            <Head/>
+            <Header/>
+            <Body/>
+            <Footer/>
         </Root>
     }
 
