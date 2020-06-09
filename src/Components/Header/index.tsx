@@ -1,3 +1,4 @@
+/** @jsx jsx */
 import React from "react";
 import styled from "@emotion/styled";
 import logo from '../../assets/images/logo.svg'
@@ -6,6 +7,7 @@ import Menu from "./Menu";
 import Icon from "../SocialNetBar";
 import cart from '../../assets/images/cart.svg'
 import faq from '../../assets/images/faq.svg'
+import {jsx,css} from "@emotion/core";
 
 const Root = styled.div`
 position: relative;
@@ -24,11 +26,22 @@ align-items: flex-start;
 const WhiteSide = styled.div`
 height: 267px;
 margin-left: 20%;
+@media (max-width: 1280px) {
+margin-left: 6%;
+}
+@media (max-width: 1024px) {
+margin-left: 5%;
+}
 `
+
 const Inks = styled.div`
 position: absolute;
 left: 47.29%;
 top: 47%;
+
+@media screen and (max-width: 1024px) {
+left: 34.48%;
+}
 `
 const MenuPosition = styled.div`
 margin-top: 52px;
@@ -47,7 +60,10 @@ width: 210px;
 const Cart = styled.div`
 position: fixed;
 left: 87%;
-top: 425px
+top: 425px;
+@media screen and (max-width: 1280px) {
+display: none;
+}
 `
 const GoodsCount = styled.div`
 position: fixed;
@@ -60,11 +76,15 @@ font-size: 20px;
 line-height: 100%;
 
 letter-spacing: 0.04em;
+
 `
 const Faq = styled.div`
 position: fixed;
 top: 923px;
 left: 87%;
+@media screen and (max-width: 1280px) {
+display: none;
+}
 `
 
 const Head:React.FunctionComponent = () =>{
@@ -83,7 +103,7 @@ const Head:React.FunctionComponent = () =>{
                     <Icon icon={"vk"}/>
                     <Icon icon={"telegram"}/>
                 </SocialNetBarPosition>
-                <Inks><img src={inks} alt=""/></Inks>
+                <Inks><img src={inks} alt="" css = {css`width: 100%; height: auto;`}/></Inks>
                 <Cart>
                     <img src={cart} alt="Cart"/>
                     <GoodsCount>1</GoodsCount>

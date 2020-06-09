@@ -6,13 +6,19 @@ import Menu from "./Menu";
 import Icon from "../SocialNetBar";
 
 const Root = styled.div`
+width: 100%;
 display: flex;
 height: 400px;
-background: url(${ink}) no-repeat;
+background: url(${ink}) no-repeat bottom left fixed;
 padding-top: 659px;
+@media screen and (max-width: 1280px){
+float: left;
+}
 `
 const Logo = styled.div`
-margin-left: 477px;
+margin-left: 23%;
+max-width: 270.9px;
+height: auto;
 `
 const MenuAndSocNetBar = styled.div`
 margin-left: 29%;

@@ -2,6 +2,7 @@ import banner1 from "../../assets/images/Banners/BANNER1.png"
 import banner2 from "../../assets/images/Banners/BANNER2.png"
 import banner3 from "../../assets/images/Banners/BANNER3.png"
 import React from "react";
+import styled from "@emotion/styled";
 
 type TBanner = 'banner1' | 'banner2' | 'banner3'
 const bannerMap: Record<TBanner, string>
@@ -11,8 +12,16 @@ const bannerMap: Record<TBanner, string>
     banner3: banner3,
 }
 
+const Wrapper = styled.div`
+@media screen and (max-width: 1280px){
+& > img {margin-left: 5%;
+width: 90%;
+height: auto;
+}}
+`
+
 const Banner:React.FunctionComponent<{ banner: TBanner }> = ({banner}) =>
-    <img src={bannerMap[banner]} alt={banner}/>
+    <Wrapper><img src={bannerMap[banner]} alt={banner}/></Wrapper>
 
 
     export default Banner;
