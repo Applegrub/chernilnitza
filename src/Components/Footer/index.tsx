@@ -9,11 +9,8 @@ const Root = styled.div`
 width: 100%;
 display: flex;
 height: 400px;
-background: url(${ink}) no-repeat bottom left fixed;
+background: url(${ink}) no-repeat left;
 padding-top: 659px;
-@media screen and (max-width: 1280px){
-float: left;
-}
 `
 const Logo = styled.div`
 margin-left: 23%;

@@ -14,9 +14,10 @@ const bannerMap: Record<TBanner, string>
 
 const Wrapper = styled.div`
 @media screen and (max-width: 1280px){
-& > img {margin-left: 5%;
-width: 90%;
-height: auto;
+& > img {
+margin-bottom: 80px;
+max-width: 936px;
+max-height: 407px;
 }}
 `
 

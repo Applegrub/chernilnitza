@@ -4,8 +4,8 @@ import styled from "@emotion/styled";
 import logo from '../../assets/images/logo.svg'
 import inks from '../../assets/images/Inks.svg'
 import Menu from "./Menu";
+import Cart from "./Cart"
 import Icon from "../SocialNetBar";
-import cart from '../../assets/images/cart.svg'
 import faq from '../../assets/images/faq.svg'
 import {jsx,css} from "@emotion/core";
 
@@ -57,27 +57,12 @@ width: 210px;
  }
 `
 
-const Cart = styled.div`
+const CartPosition = styled.div`
 position: fixed;
 left: 87%;
 top: 425px;
-@media screen and (max-width: 1280px) {
-display: none;
-}
 `
-const GoodsCount = styled.div`
-position: fixed;
-left: 90.4%;
-top: 488px;
-font-family: Roboto Condensed, sans-serif;
-font-style: normal;
-font-weight: bold;
-font-size: 20px;
-line-height: 100%;
 
-letter-spacing: 0.04em;
-
-`
 const Faq = styled.div`
 position: fixed;
 top: 923px;
@@ -104,10 +89,9 @@ const Head:React.FunctionComponent = () =>{
                     <Icon icon={"telegram"}/>
                 </SocialNetBarPosition>
                 <Inks><img src={inks} alt="" css = {css`width: 100%; height: auto;`}/></Inks>
-                <Cart>
-                    <img src={cart} alt="Cart"/>
-                    <GoodsCount>1</GoodsCount>
-                </Cart>
+                <CartPosition css = {css`@media (max-width: 1280px){display:none};`}>
+                    <Cart goodsCount={1}/>
+                </CartPosition>
                 <Faq><img src={faq} alt="FAQ"/></Faq>
             </WhiteSide>
         </Root>;

@@ -2,11 +2,11 @@
 import React from "react";
 import styled from "@emotion/styled";
 import Banner from "./Banner";
-import Good from "./Cood";
 import instTree from '../../assets/images/instTree.svg'
-import Post from "./Post";
 import { css, jsx } from '@emotion/core'
 import AboutUs from "./AboutUs";
+import OneLineSeries from "./OneLineSeries";
+import Post from "./Post";
 
 const Root = styled.div`
 display: grid;
@@ -18,6 +18,9 @@ margin: 20px -10px;
 display: flex;
 & > * {
 margin: 10px;
+}
+@media screen and (max-width: 1280px){
+display: none;
 }
 `
 const Circle = styled.div`
@@ -32,6 +35,10 @@ width: 922px;
 height: 93px;
 background: #F9F9F9;
 padding: 63px 0 0 222px;
+@media screen and (max-width: 1280px){
+width: 714px;
+height: 93px;
+}
 `
 const Name = styled.div`
 font-family: Roboto Condensed,sans-serif;
@@ -44,23 +51,13 @@ letter-spacing: 0.04em;
 text-transform: uppercase;
 color: #000000;
 `
-const OneLineSeries = styled.div`
-grid-template-areas: 'g g g';
-grid-template-columns: auto auto auto;
-margin-top: 34px;
-margin-bottom: 34px;
-& > * {
+const PostPosition = styled.div`
+display: flex;
+margin: 34px 0 80px;
+& *{
 margin: 10px;
-};`
-const LoveSeries = styled.div`
-display: grid;
-grid-template-areas: 'g g g'
-'g g g';
-grid-template-columns: auto auto auto;
-grid-template-rows: auto auto;
-margin-top: 34px;
-& > * {
-margin: 10px;}`
+}
+`
 
 const InstPosition = styled.div`
 margin-top: 70px;
@@ -75,9 +72,13 @@ background: #F9F9F9;
 display: flex;
 justify-content: center;
 align-items: center;
+@media screen and (max-width: 1280px){
+width: 548px;
+height: 1041px;
+}
 `
 const InstName = styled.div`
-width: 486px;
+width: 548px;
 height: 110px;
 font-family: Roboto Condensed,sans-serif;
 font-style: normal;
@@ -98,6 +99,10 @@ padding-right: 70px;
 width: 1074px;
 height: 156px;
 background: #000000;
+@media screen and (max-width: 1280px){
+width: 866px;
+height: 156px;
+}
 & > img {
 margin: 15px;}
 & > div {
@@ -124,69 +129,53 @@ export default class Body extends React.Component {
    render(): React.ReactNode {
         let isSelected = this.state.isSelected;
        return <Root>
-           <Banner banner={"banner1"} css = {css`width: auto; height: auto`}/>
+           <Banner banner={"banner1"}/>
            <PointSlider>
                <Circle css = {css `background: ${isSelected? "#000000" :"none" }`}/>
                <Circle/>
                <Circle/>
            </PointSlider>
+
            <GoodsSeriesNameDiv><Name>время летит</Name></GoodsSeriesNameDiv>
-           <OneLineSeries>
-               <Good good={"oldAge1"}/>
-               <Good good={"oldAgeWithPrise"}/>
-               <Good good={"oldAge2"}/>
-           </OneLineSeries>
+           <OneLineSeries first={"oldAge1"} second={"oldAgeWithPrise"} third={"oldAge2"}/>
+
            <GoodsSeriesNameDiv><Name>без любви никуда</Name></GoodsSeriesNameDiv>
-           <LoveSeries>
-               <Good good={"withLove1"}/>
-               <Good good={"withLove2"}/>
-               <Good good={"withLove3"}/>
-               <Good good={"jesus1"}/>
-               <Good good={"youAreGood"}/>
-               <Good good={"jesus2"}/>
-           </LoveSeries>
+           <OneLineSeries first={"withLove1"} second={"withLove2"} third={"withLove3"}/>
+           <div css = {css`margin-top: -68px;`}><OneLineSeries first={"jesus1"} second={"youAreGood"} third={"jesus2"} /></div>
+
            <InstPosition>
                <img src={instTree} alt="Instagram Tree"/>
                <Instagram><InstName>INSTAGRAM @chenilnitsa.rf</InstName></Instagram>
            </InstPosition>
+
            <GoodsSeriesNameDiv><Name>о боже</Name></GoodsSeriesNameDiv>
-           <OneLineSeries>
-               <Good good={"jesus2"}/>
-               <Good good={"jesus1"}/>
-               <Good good={"jesus3"}/>
-           </OneLineSeries>
+           <OneLineSeries first={"jesus2"} second={"jesus1"} third={"jesus3"}/>
+
            <GoodsSeriesNameDiv><Name>ХОЧУ не КАК У ВСЕХ ._.</Name></GoodsSeriesNameDiv>
-           <OneLineSeries>
-               <Good good={"contactUs"}/>
-               <Good good={"oldAge3"}/>
-               <Good good={"oldAgeExclusive"}/>
-           </OneLineSeries>
-           <OneLineSeries css = {css`margin: 106px 0`}>
+           <OneLineSeries first={"contactUs"} second={"oldAge3"} third={"oldAgeExclusive"}/>
+
+           <PostPosition>
                <Post post={"post1"}/>
                <Post post={"post2"}/>
                <Post post={"post3"}/>
-           </OneLineSeries>
+           </PostPosition>
+
            <GoodsSeriesNameDiv><Name>ДРУЖе</Name></GoodsSeriesNameDiv>
-           <OneLineSeries>
-               <Good good={"withLove3"}/>
-               <Good good={"youAreGood"}/>
-               <Good good={"oldAge1"}/>
-           </OneLineSeries>
+           <OneLineSeries first={"withLove3"} second={"youAreGood"} third={"oldAge1"}/>
+
            <AboutUsPosition>
                <div>
-                   О НАС
+                   О нас
                </div>
                <AboutUs aboutUs={"aboutUs1"}/>
                <AboutUs aboutUs={"aboutUs2"}/>
                <AboutUs aboutUs={"aboutUs3"}/>
                <AboutUs aboutUs={"aboutUs4"}/>
            </AboutUsPosition>
+
            <GoodsSeriesNameDiv><Name>ЕЩЕ НЕМНОГО</Name></GoodsSeriesNameDiv>
-           <OneLineSeries>
-               <Good good={"jesus2"}/>
-               <Good good={"jesus1"}/>
-               <Good good={"jesus3"}/>
-           </OneLineSeries>
+           <OneLineSeries first={"jesus2"} second={"jesus1"} third={"jesus3"}/>
+
        </Root>;
    }
 }

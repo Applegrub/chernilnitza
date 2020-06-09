@@ -12,9 +12,8 @@ import withLove1 from "../../assets/images/Goods/withLove1.png"
 import withLove2 from "../../assets/images/Goods/withLove2.png"
 import withLove3 from "../../assets/images/Goods/withLove3.png"
 import youAreGood from "../../assets/images/Goods/youAreGood.png"
-import styled from "@emotion/styled";
 
-type TGood = 'contactUs' | 'jesus1'| 'jesus2'| 'jesus3'|
+export type TGood = 'contactUs' | 'jesus1'| 'jesus2'| 'jesus3'|
     'oldAge1'| 'oldAge2'| 'oldAge3'| 'oldAgeWithPrise'| 'oldAgeExclusive'|
     'withLove1' | 'withLove2' | 'withLove3' | 'youAreGood'
 let goodMap: Record<TGood, string>;
@@ -34,9 +33,6 @@ goodMap = {
     youAreGood: youAreGood,
 };
 
-const Item = styled.div`
-grid-area: g;
-`
 
 const Good: React.FunctionComponent<{good:TGood}> = ({good}) =>
     <img src={goodMap[good]} alt={good}/>
