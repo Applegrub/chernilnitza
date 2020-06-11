@@ -19,3 +19,9 @@ export default class App extends React.Component {
     }
 
 }
+/*const App: React.FunctionComponent = () =>
+    <Root>
+        <Header/>
+        <Main/>
+        <Footer/>
+    </Root>*/
