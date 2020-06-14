@@ -20,6 +20,7 @@ color: #000000;
 `
 
 const Menu:React.FunctionComponent = () => {
+
     return<Wrapper>
         <Item>Открытки</Item>
         <Item>О нас</Item>
