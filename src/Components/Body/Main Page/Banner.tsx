@@ -1,6 +1,6 @@
-import banner1 from "../../assets/images/Banners/BANNER1.png"
-import banner2 from "../../assets/images/Banners/BANNER2.png"
-import banner3 from "../../assets/images/Banners/BANNER3.png"
+import banner1 from "../../../assets/images/Banners/BANNER1.png"
+import banner2 from "../../../assets/images/Banners/BANNER2.png"
+import banner3 from "../../../assets/images/Banners/BANNER3.png"
 import React from "react";
 import styled from "@emotion/styled";
 

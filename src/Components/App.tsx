@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from "@emotion/styled";
 import Header from "./Header";
-import Body from "./Body";
+import Body from "./Body/Main Page";
 import Footer from "./Footer";
 import { Router, Switch, Route } from 'react-router-dom'
 import { inject, observer } from 'mobx-react'

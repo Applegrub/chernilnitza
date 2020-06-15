@@ -2,11 +2,11 @@
 import React from "react";
 import styled from "@emotion/styled";
 import Banner from "./Banner";
-import instTree from '../../assets/images/instTree.svg'
+import instTree from '../../../assets/images/instTree.svg'
 import { css, jsx } from '@emotion/core'
-import AboutUs from "./AboutUs";
-import OneLineSeries from "./OneLineSeries";
-import Post from "./Post";
+import AboutUs from "../AboutUs";
+import OneLineSeries from "../OneLineSeries";
+import Post from "../Post";
 
 const Root = styled.div`
 display: grid;
