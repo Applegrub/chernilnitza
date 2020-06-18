@@ -13,7 +13,6 @@ import Contacts from "./Body/Contacts/Contacts";
 
 
 const Root = styled.div`
-
 `
 interface IProps {
     historyStore?: HistoryStore

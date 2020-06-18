@@ -2,7 +2,7 @@
 import React from "react";
 import styled from "@emotion/styled";
 import { css, jsx } from '@emotion/core'
-import ink from '../../assets/images/inkFooter.svg'
+import inks from '../../assets/images/inkFooter.svg'
 import logo from '../../assets/images/logoFooter.svg'
 import Menu from "./Menu";
 import Icon from "../SocialNetBar";
@@ -11,20 +11,36 @@ import {inject, observer} from "mobx-react";
 import {HistoryStore} from "../../stores";
 
 const Root= styled.div`
-width: 100%;
+position: relative;
 display: flex;
-height: 400px;
-background: url(${ink}) no-repeat left;
-padding-top: 659px;
+height: 330px;
+padding-top: 640px;
+`
+const Inks = styled.div`
+position: absolute;
+top: 34px;
 z-index: -1;
 `
 const Wrapper = styled.div`
 margin-left: 23%;
 max-width: 270.9px;
-height: auto;
+height: 311px;
+@media screen and (max-width: 1280px) {
+margin-left: 10%;
+}
 `
 const MenuAndSocNetBar = styled.div`
-margin-left: 29%;
+margin-top: 22px;
+min-width: 322px;
+max-height: 311px;
+margin-left: 28%;
+@media screen and (max-width: 1280px) {
+margin-left: 34%;
+@media screen and (max-width: 1080px) {
+margin-left: 30%;
+}
+}
+
 `
 const SocNetBar = styled.div`
 display: flex;
@@ -37,7 +53,10 @@ z-index: 100;
 `
 const Footer: React.FunctionComponent = () => {
     const { width } = useWindowDimensions();
-    return <Root css={css`background-position: ${-1600 + width}px;`}>
+    return <Root>
+        <Inks css = {css` left: ${0.6 *(-1920+width)}px; 
+        @media (max-width: 1280px){left: ${0.65*(-1920+width)}px;}`}>
+            <img src={inks} alt="Inks"/></Inks>
         <BackOnMainPage href=''/>
         <MenuAndSocNetBar>
             <Menu />

@@ -25,7 +25,7 @@ text-transform: uppercase;
 color: #000000;
 `
 const Menu: React.FunctionComponent = () => {
-    const items: string[] = ['Открытки', 'О нас', 'Контакты', 'Доставка']
+    const items: string[] = ['Открытки', 'О нас', 'Контакты', 'Доставка','ПОЛИТИКА КОНФИДенЦИАЛЬНОСТИ']
 
     return <Wrapper>
         {items.map((item, index) => <Item key={index} href={item} text={item} />)}

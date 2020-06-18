@@ -13,7 +13,6 @@ import {inject, observer} from "mobx-react";
 
 const Root = styled.div`
 position: relative;
-width: 100%;
 `
 
 const DarkSide = styled.div`
@@ -40,7 +39,6 @@ const Inks = styled.div`
 position: absolute;
 left: 47.29%;
 top: 47%;
-
 @media screen and (max-width: 1024px) {
 left: 34.48%;
 }
