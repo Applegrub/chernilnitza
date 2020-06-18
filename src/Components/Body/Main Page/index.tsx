@@ -5,8 +5,9 @@ import Banner from "./Banner";
 import instTree from '../../../assets/images/instTree.svg'
 import { css, jsx } from '@emotion/core'
 import AboutUs from "../AboutUs";
-import OneLineSeries from "../OneLineSeries";
+import OneLineSeries, {GoodsSeriesNameDiv, Name} from "../OneLineSeries";
 import Post from "../Post";
+import ContactForm from "../ContactForm";
 
 const Root = styled.div`
 display: grid;
@@ -30,31 +31,11 @@ border-radius: 20px;
 border: 2px solid #000000;
 box-sizing: border-box;`
 
-const GoodsSeriesNameDiv = styled.div`
-width: 922px;
-height: 93px;
-background: #F9F9F9;
-padding: 63px 0 0 222px;
-@media screen and (max-width: 1280px){
-width: 714px;
-height: 93px;
-}
-`
-const Name = styled.div`
-font-family: Roboto Condensed,sans-serif;
-font-style: normal;
-font-weight: bold;
-font-size: 20px;
-line-height: 150%;
-
-letter-spacing: 0.04em;
-text-transform: uppercase;
-color: #000000;
-`
 const PostPosition = styled.div`
 display: flex;
 margin: 34px 0 80px;
-& *{
+padding: -10px;
+& > * {
 margin: 10px;
 }
 `
@@ -152,7 +133,9 @@ export default class Body extends React.Component {
            <OneLineSeries first={"jesus2"} second={"jesus1"} third={"jesus3"}/>
 
            <GoodsSeriesNameDiv><Name>ХОЧУ не КАК У ВСЕХ ._.</Name></GoodsSeriesNameDiv>
-           <OneLineSeries first={"contactUs"} second={"oldAge3"} third={"oldAgeExclusive"}/>
+           <div css={css`display: flex; max-width: 1164px`}>
+               <ContactForm/>
+               <OneLineSeries second={"oldAge3"} third={"oldAgeExclusive"}/></div>
 
            <PostPosition>
                <Post post={"post1"}/>

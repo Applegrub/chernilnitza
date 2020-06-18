@@ -6,6 +6,10 @@ import Footer from "./Footer";
 import { Router, Switch, Route } from 'react-router-dom'
 import { inject, observer } from 'mobx-react'
 import { HistoryStore } from '../stores'
+import AboutUsPage from "./Body/About Us/AboutUsPage";
+import GoodsCart from "./Body/GoodsCart/GoodsCart";
+import Shipment from "./Body/Shipment/Shipment";
+import Contacts from "./Body/Contacts/Contacts";
 
 
 const Root = styled.div`
@@ -25,6 +29,10 @@ export default class App extends React.Component<IProps> {
                 <Header />
                 <Switch>
                     <Route exact path="/" component={Body} />
+                    <Route exact path='/О нас' component={AboutUsPage}/>
+                    <Route exact path='/Открытки' component={GoodsCart}/>
+                    <Route exact path='/Доставка' component={Shipment}/>
+                    <Route exact path='/Контакты' component={Contacts}/>
                     <Route component={Body} />
                 </Switch>
                 <Footer />
@@ -33,9 +41,3 @@ export default class App extends React.Component<IProps> {
     }
 
 }
-/*const App: React.FunctionComponent = () =>
-    <Root>
-        <Header/>
-        <Main/>
-        <Footer/>
-    </Root>*/

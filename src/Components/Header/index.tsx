@@ -8,6 +8,8 @@ import Cart from "./Cart"
 import Icon from "../SocialNetBar";
 import faq from '../../assets/images/faq.svg'
 import {jsx,css} from "@emotion/core";
+import {HistoryStore} from "../../stores";
+import {inject, observer} from "mobx-react";
 
 const Root = styled.div`
 position: relative;
@@ -76,7 +78,7 @@ const Head:React.FunctionComponent = () =>{
 
         return <Root>
             <DarkSide>
-                <img src={logo} alt='Logo'/>
+                <BackOnMainPage href=''/>
             </DarkSide>
             <WhiteSide>
                 <MenuPosition><Menu/></MenuPosition>
@@ -97,3 +99,21 @@ const Head:React.FunctionComponent = () =>{
         </Root>;
     }
 export default Head;
+
+interface IProps {
+    href: string
+    historyStore?: HistoryStore
+}
+
+const BackOnMainPage:React.FunctionComponent<IProps> = inject('historyStore')(observer(
+    (props) => {
+        const handlePush = (href: string) => props.historyStore?.history.push(href)
+        return <Wrapper onClick={() => handlePush(props.href)}>
+            <img src={logo} alt='Logo' />
+        </Wrapper>
+    }))
+
+const Wrapper = styled.div`
+width: 259px;
+height: 245.2px;
+`
