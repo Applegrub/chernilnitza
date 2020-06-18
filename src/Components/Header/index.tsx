@@ -69,7 +69,7 @@ const Faq = styled.div`
 position: fixed;
 top: 923px;
 left: 87%;
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1556px) {
 display: none;
 }
 `
@@ -91,7 +91,7 @@ const Head:React.FunctionComponent = () =>{
                     <Icon icon={"telegram"}/>
                 </SocialNetBarPosition>
                 <Inks><img src={inks} alt="" css = {css`width: 100%; height: auto;`}/></Inks>
-                <CartPosition css = {css`@media (max-width: 1280px){display:none};`}>
+                <CartPosition css = {css`@media (max-width: 1556px){display:none};`}>
                     <Cart goodsCount={1}/>
                 </CartPosition>
                 <Faq><img src={faq} alt="FAQ"/></Faq>

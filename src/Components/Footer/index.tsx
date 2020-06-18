@@ -7,6 +7,8 @@ import logo from '../../assets/images/logoFooter.svg'
 import Menu from "./Menu";
 import Icon from "../SocialNetBar";
 import { useWindowDimensions } from '../../utils/dimensions'
+import {inject, observer} from "mobx-react";
+import {HistoryStore} from "../../stores";
 
 const Root= styled.div`
 width: 100%;
@@ -16,7 +18,7 @@ background: url(${ink}) no-repeat left;
 padding-top: 659px;
 z-index: -1;
 `
-const Logo = styled.div`
+const Wrapper = styled.div`
 margin-left: 23%;
 max-width: 270.9px;
 height: auto;
@@ -36,7 +38,7 @@ z-index: 100;
 const Footer: React.FunctionComponent = () => {
     const { width } = useWindowDimensions();
     return <Root css={css`background-position: ${-1600 + width}px;`}>
-        <Logo><img src={logo} alt="Logo" /></Logo>
+        <BackOnMainPage href=''/>
         <MenuAndSocNetBar>
             <Menu />
             <SocNetBar >
@@ -48,5 +50,15 @@ const Footer: React.FunctionComponent = () => {
         </MenuAndSocNetBar>
     </Root>
 }
-
+interface IProps {
+    href: string
+    historyStore?: HistoryStore
+}
+const BackOnMainPage:React.FunctionComponent<IProps> = inject('historyStore')(observer(
+    (props) => {
+        const handlePush = (href: string) => props.historyStore?.history.push(href)
+        return <Wrapper onClick={() => handlePush(props.href)}>
+            <img src={logo} alt='Logo' />
+        </Wrapper>
+    }))
 export default Footer;

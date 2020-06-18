@@ -10,9 +10,10 @@ import Post from "../Post";
 import ContactForm from "../ContactForm";
 
 const Root = styled.div`
-display: grid;
-justify-items: center;
-
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 `
 const PointSlider = styled.div`
 margin: 20px -10px;

@@ -38,10 +38,10 @@ const AboutUsPage:React.FC = () =>
 export default AboutUsPage;
 
 const Root = styled.div`
-display: grid;
-justify-items: center;
+display: flex;
 flex-direction: column;
-
+justify-content: center;
+align-items: center;
 `
 const BlackLine = styled.div`
 width: 1121px;

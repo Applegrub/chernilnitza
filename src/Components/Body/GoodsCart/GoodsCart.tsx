@@ -37,8 +37,10 @@ const GoodsCart: React.FC = () =>
 export default GoodsCart;
 
 const Root = styled.div`
-display: grid;
-justify-items: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 `
 const Wrapper = styled.div`
 display: flex;
