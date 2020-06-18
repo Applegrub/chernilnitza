@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c61fac66f27d79edb024a7d8a31c9fac",
+    "revision": "990772724456edb6c8badf71c4c78b41",
     "url": "/chernilnitza/index.html"
   },
   {
-    "revision": "4f90fb144f162b172725",
-    "url": "/chernilnitza/static/js/2.b4b7c8b1.chunk.js"
+    "revision": "936bc635b1f36eb2093a",
+    "url": "/chernilnitza/static/js/2.b9a9ab58.chunk.js"
   },
   {
-    "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/chernilnitza/static/js/2.b4b7c8b1.chunk.js.LICENSE.txt"
+    "revision": "216e537bacc64f9dbaabd26649a9ab95",
+    "url": "/chernilnitza/static/js/2.b9a9ab58.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d0243f4911aa58c89d91",
-    "url": "/chernilnitza/static/js/main.423f6c82.chunk.js"
+    "revision": "302612bdac71cef95266",
+    "url": "/chernilnitza/static/js/main.1b44567f.chunk.js"
   },
   {
     "revision": "9576fb28d8b5f44588e4",
@@ -30,6 +30,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "6826453b5fba2b327050214f323d07c8",
     "url": "/chernilnitza/static/media/BANNER3.6826453b.png"
+  },
+  {
+    "revision": "16ed0e9bc4d07529bd552f0cc16cead3",
+    "url": "/chernilnitza/static/media/Good1.16ed0e9b.png"
   },
   {
     "revision": "407f253785726cc354a8c87498631caa",
@@ -52,8 +56,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/chernilnitza/static/media/Post3.94977b0a.svg"
   },
   {
+    "revision": "5824040de6bf7d3d1d0ecaccbb412d64",
+    "url": "/chernilnitza/static/media/arrow.5824040d.svg"
+  },
+  {
     "revision": "d57c7d39874f1e845075204df94669a3",
     "url": "/chernilnitza/static/media/cart.d57c7d39.svg"
+  },
+  {
+    "revision": "4ac6e4ac498c4720189998a5d557f3b1",
+    "url": "/chernilnitza/static/media/chat.4ac6e4ac.svg"
+  },
+  {
+    "revision": "9ca747f83c7269c29e7366daacbbb50b",
+    "url": "/chernilnitza/static/media/chernilnitza.9ca747f8.svg"
   },
   {
     "revision": "09f65ae3566a5eb795d2fec421b91567",
@@ -64,8 +80,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/chernilnitza/static/media/faq.5342a496.svg"
   },
   {
-    "revision": "588f42d553a193abcac3db9375aa999a",
-    "url": "/chernilnitza/static/media/inkFooter.588f42d5.svg"
+    "revision": "23731c04580b0d5875ff1a100d844166",
+    "url": "/chernilnitza/static/media/inkFooter.23731c04.svg"
   },
   {
     "revision": "59dede6e714d14830649b4072ac9ac67",
@@ -86,6 +102,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "be94ee563d76aa6cfbb772c577d1af46",
     "url": "/chernilnitza/static/media/logo.be94ee56.svg"
+  },
+  {
+    "revision": "f9c4ccae17ad9ab721790efe458b0c4c",
+    "url": "/chernilnitza/static/media/logoAboutUs.f9c4ccae.svg"
   },
   {
     "revision": "888e07a81b9d6fd90cf1b30a340e447d",
