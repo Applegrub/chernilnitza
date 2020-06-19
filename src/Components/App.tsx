@@ -27,7 +27,7 @@ export default class App extends React.Component<IProps> {
             <Root>
                 <Header />
                 <Switch>
-                    <Route exact path="/" component={Body} />
+                    <Route exact path="/chernilnitza" component={Body} />
                     <Route exact path='/О нас' component={AboutUsPage}/>
                     <Route exact path='/Открытки' component={GoodsCart}/>
                     <Route exact path='/Доставка' component={Shipment}/>

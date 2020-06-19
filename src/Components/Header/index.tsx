@@ -76,7 +76,7 @@ const Head:React.FunctionComponent = () =>{
 
         return <Root>
             <DarkSide>
-                <BackOnMainPage href=''/>
+                <BackOnMainPage href='chernilnitza'/>
             </DarkSide>
             <WhiteSide>
                 <MenuPosition><Menu/></MenuPosition>

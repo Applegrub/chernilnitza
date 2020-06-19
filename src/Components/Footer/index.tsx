@@ -57,7 +57,7 @@ const Footer: React.FunctionComponent = () => {
         <Inks css = {css` left: ${0.6 *(-1920+width)}px; 
         @media (max-width: 1280px){left: ${0.65*(-1920+width)}px;}`}>
             <img src={inks} alt="Inks"/></Inks>
-        <BackOnMainPage href=''/>
+        <BackOnMainPage href='chernilnitza'/>
         <MenuAndSocNetBar>
             <Menu />
             <SocNetBar >
