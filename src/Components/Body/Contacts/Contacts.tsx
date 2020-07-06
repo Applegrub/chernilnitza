@@ -134,6 +134,6 @@ align-items: center;
 `
 const Arrow = styled.div`
 position: absolute;
-top: 424px;
-left: 70%;
+top: 427px;
+left: 114%;
 `

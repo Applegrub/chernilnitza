@@ -1,32 +1,20 @@
 /** @jsx jsx */
 import React from "react";
 import styled from "@emotion/styled";
-import Banner from "./Banner";
 import instTree from '../../../assets/images/instTree.svg'
 import { css, jsx } from '@emotion/core'
 import AboutUs from "../AboutUs";
 import OneLineSeries, {GoodsSeriesNameDiv, Name} from "../OneLineSeries";
 import Post from "../Post";
 import ContactForm from "../ContactForm";
+import Slideshow from "./Slider";
 
 export default class Body extends React.Component {
-    state = {
-        isSelected: true,
-    }
-
-    toggleSlider = () => {
-        this.setState({isSelected: !this.state.isSelected})
-    }
 
    render(): React.ReactNode {
-        let isSelected = this.state.isSelected;
+
        return <Root>
-           <Banner banner={"banner1"}/>
-           <PointSlider>
-               <Circle css = {css `background: ${isSelected? "#000000" :"none" }`}/>
-               <Circle/>
-               <Circle/>
-           </PointSlider>
+           <Slideshow/>
 
            <GoodsSeriesNameDiv><Name>время летит</Name></GoodsSeriesNameDiv>
            <OneLineSeries first={"oldAge1"} second={"oldAgeWithPrise"} third={"oldAge2"}/>
@@ -80,24 +68,24 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-`
-const PointSlider = styled.div`
-margin: 20px -10px;
-display: flex;
-& > * {
-margin: 10px;
-}
-@media screen and (max-width: 1280px){
-display: none;
-}
-`
-const Circle = styled.div`
+.false{
 width: 20px;
 height: 20px;
 border-radius: 20px;
 border: 2px solid #000000;
-box-sizing: border-box;`
-
+box-sizing: border-box;
+margin: 10px 10px 30px 10px;
+}
+.active {
+width: 20px;
+height: 20px;
+border-radius: 20px;
+border: 2px solid #000000;
+box-sizing: border-box;
+margin: 10px 10px 30px 10px;
+background: black;
+}
+`
 const PostPosition = styled.div`
 display: flex;
 margin: 34px 0 80px;

@@ -11,6 +11,7 @@ import {inject, observer} from "mobx-react";
 import {HistoryStore} from "../../stores";
 
 const Root= styled.div`
+max-width: 1920px;
 position: relative;
 display: flex;
 height: 330px;

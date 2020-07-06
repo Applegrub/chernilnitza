@@ -11,8 +11,57 @@ import {jsx,css} from "@emotion/core";
 import {HistoryStore} from "../../stores";
 import {inject, observer} from "mobx-react";
 
+
+const Head:React.FunctionComponent = () =>{
+
+        return <Root>
+            <DarkSide>
+                <BackOnMainPage href='chernilnitza'/>
+            </DarkSide>
+            <WhiteSide>
+                <MenuPosition><Menu/></MenuPosition>
+                <SocialNetBarPosition>
+                    <Icon icon={"instagram"}/>
+                    <Icon icon={"facebook"}/>
+                    <Icon icon={"twitter"}/>
+                    <Icon icon={"printerest"}/>
+                    <Icon icon={"vk"}/>
+                    <Icon icon={"telegram"}/>
+                </SocialNetBarPosition>
+                <Inks>
+                    <InksText>
+                        ИСПОЛЬЗУЙ ЧЕРНИЛА, ЕСЛИ СИЛЬНО МИЛО
+                    </InksText>
+                </Inks>
+                <CartPosition css = {css`@media (max-width: 1556px){display:none};`}>
+                    <Cart goodsCount={1}/>
+                </CartPosition>
+                <Faq><img src={faq} alt="FAQ"/></Faq>
+            </WhiteSide>
+        </Root>;
+    }
+export default Head;
+
+interface IProps {
+    href: string
+    historyStore?: HistoryStore
+}
+
+const BackOnMainPage:React.FunctionComponent<IProps> = inject('historyStore')(observer(
+    (props) => {
+        const handlePush = (href: string) => props.historyStore?.history.push(href)
+        return <Wrapper onClick={() => handlePush(props.href)}>
+            <img src={logo} alt='Logo' />
+        </Wrapper>
+    }))
+
+const Wrapper = styled.div`
+width: 259px;
+height: 245.2px;
+`
 const Root = styled.div`
 position: relative;
+
 `
 
 const DarkSide = styled.div`
@@ -22,6 +71,9 @@ display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: flex-start;
+@media (max-width: 375px) {
+height: 63px;
+}
 `
 
 const WhiteSide = styled.div`
@@ -37,11 +89,23 @@ margin-left: 5%;
 
 const Inks = styled.div`
 position: absolute;
+background: url(${inks}) no-repeat;
 left: 47.29%;
 top: 47%;
+width: 706px;
+height: 253px;
 @media screen and (max-width: 1024px) {
 left: 34.48%;
 }
+`
+const InksText = styled.div`
+position: absolute;
+left: 29%;
+top: 9%;
+font-family: Roboto Condensed, sans-serif;
+font-size: 16px;
+line-height: 100%;
+color: #FFFFFF;
 `
 const MenuPosition = styled.div`
 margin-top: 52px;
@@ -69,49 +133,4 @@ top: 923px;
 left: 87%;
 @media screen and (max-width: 1556px) {
 display: none;
-}
-`
-
-const Head:React.FunctionComponent = () =>{
-
-        return <Root>
-            <DarkSide>
-                <BackOnMainPage href='chernilnitza'/>
-            </DarkSide>
-            <WhiteSide>
-                <MenuPosition><Menu/></MenuPosition>
-                <SocialNetBarPosition>
-                    <Icon icon={"instagram"}/>
-                    <Icon icon={"facebook"}/>
-                    <Icon icon={"twitter"}/>
-                    <Icon icon={"printerest"}/>
-                    <Icon icon={"vk"}/>
-                    <Icon icon={"telegram"}/>
-                </SocialNetBarPosition>
-                <Inks><img src={inks} alt="" css = {css`width: 100%; height: auto;`}/></Inks>
-                <CartPosition css = {css`@media (max-width: 1556px){display:none};`}>
-                    <Cart goodsCount={1}/>
-                </CartPosition>
-                <Faq><img src={faq} alt="FAQ"/></Faq>
-            </WhiteSide>
-        </Root>;
-    }
-export default Head;
-
-interface IProps {
-    href: string
-    historyStore?: HistoryStore
-}
-
-const BackOnMainPage:React.FunctionComponent<IProps> = inject('historyStore')(observer(
-    (props) => {
-        const handlePush = (href: string) => props.historyStore?.history.push(href)
-        return <Wrapper onClick={() => handlePush(props.href)}>
-            <img src={logo} alt='Logo' />
-        </Wrapper>
-    }))
-
-const Wrapper = styled.div`
-width: 259px;
-height: 245.2px;
-`
+}`
