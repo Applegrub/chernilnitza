@@ -31,7 +31,7 @@ const Item = styled.div`
 
 `
 
-export const GoodsSeriesNameDiv = styled.div`
+const GoodsSeriesNameDiv = styled.div`
 width: 922px;
 height: 93px;
 background: #F9F9F9;
@@ -41,7 +41,7 @@ width: 714px;
 height: 93px;
 }
 `
-export const Name = styled.div`
+const Name = styled.div`
 font-family: Roboto Condensed,sans-serif;
 font-weight: bold;
 font-size: 20px;
@@ -51,3 +51,7 @@ letter-spacing: 0.04em;
 text-transform: uppercase;
 color: #000000;
 `
+export {
+    GoodsSeriesNameDiv,
+    Name,
+}

@@ -1,22 +1,21 @@
 /** @jsx jsx */
 import React from "react";
 import styled from "@emotion/styled";
-import logo from '../../assets/images/logo.svg'
 import inks from '../../assets/images/Inks.svg'
 import Menu from "./Menu";
 import Cart from "./Cart"
 import Icon from "../SocialNetBar";
 import faq from '../../assets/images/faq.svg'
 import {jsx,css} from "@emotion/core";
-import {HistoryStore} from "../../stores";
-import {inject, observer} from "mobx-react";
+import BackOnMainPage from "../../BackOnMainPage";
+
 
 
 const Head:React.FunctionComponent = () =>{
 
         return <Root>
             <DarkSide>
-                <BackOnMainPage href='chernilnitza'/>
+                <BackOnMainPage href='/chernilnitza'/>
             </DarkSide>
             <WhiteSide>
                 <MenuPosition><Menu/></MenuPosition>
@@ -42,23 +41,6 @@ const Head:React.FunctionComponent = () =>{
     }
 export default Head;
 
-interface IProps {
-    href: string
-    historyStore?: HistoryStore
-}
-
-const BackOnMainPage:React.FunctionComponent<IProps> = inject('historyStore')(observer(
-    (props) => {
-        const handlePush = (href: string) => props.historyStore?.history.push(href)
-        return <Wrapper onClick={() => handlePush(props.href)}>
-            <img src={logo} alt='Logo' />
-        </Wrapper>
-    }))
-
-const Wrapper = styled.div`
-width: 259px;
-height: 245.2px;
-`
 const Root = styled.div`
 position: relative;
 

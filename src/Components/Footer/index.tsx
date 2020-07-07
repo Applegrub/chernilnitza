@@ -3,12 +3,10 @@ import React from "react";
 import styled from "@emotion/styled";
 import { css, jsx } from '@emotion/core'
 import inks from '../../assets/images/inkFooter.svg'
-import logo from '../../assets/images/logoFooter.svg'
 import Menu from "./Menu";
 import Icon from "../SocialNetBar";
 import { useWindowDimensions } from '../../utils/dimensions'
-import {inject, observer} from "mobx-react";
-import {HistoryStore} from "../../stores";
+import BackOnMainPage from "../../BackOnMainPage";
 
 const Root= styled.div`
 max-width: 1920px;
@@ -58,7 +56,7 @@ const Footer: React.FunctionComponent = () => {
         <Inks css = {css` left: ${0.6 *(-1920+width)}px; 
         @media (max-width: 1280px){left: ${0.65*(-2000+width)}px;}`}>
             <img src={inks} alt="Inks"/></Inks>
-        <BackOnMainPage href='chernilnitza'/>
+       <Wrapper><BackOnMainPage href='/chernilnitza'/></Wrapper>
         <MenuAndSocNetBar>
             <Menu />
             <SocNetBar >
@@ -70,15 +68,4 @@ const Footer: React.FunctionComponent = () => {
         </MenuAndSocNetBar>
     </Root>
 }
-interface IProps {
-    href: string
-    historyStore?: HistoryStore
-}
-const BackOnMainPage:React.FunctionComponent<IProps> = inject('historyStore')(observer(
-    (props) => {
-        const handlePush = (href: string) => props.historyStore?.history.push(href)
-        return <Wrapper onClick={() => handlePush(props.href)}>
-            <img src={logo} alt='Logo' />
-        </Wrapper>
-    }))
 export default Footer;
