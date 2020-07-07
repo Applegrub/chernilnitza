@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/chernilnitza/static/js/main.65c683ac.chunk.js",
-    "main.js.map": "/chernilnitza/static/js/main.65c683ac.chunk.js.map",
+    "main.js": "/chernilnitza/static/js/main.5217b1a2.chunk.js",
+    "main.js.map": "/chernilnitza/static/js/main.5217b1a2.chunk.js.map",
     "runtime-main.js": "/chernilnitza/static/js/runtime-main.abdc1920.js",
     "runtime-main.js.map": "/chernilnitza/static/js/runtime-main.abdc1920.js.map",
     "static/js/2.48a96956.chunk.js": "/chernilnitza/static/js/2.48a96956.chunk.js",
     "static/js/2.48a96956.chunk.js.map": "/chernilnitza/static/js/2.48a96956.chunk.js.map",
     "index.html": "/chernilnitza/index.html",
-    "precache-manifest.06ec6bd068665702872ea7119e874c94.js": "/chernilnitza/precache-manifest.06ec6bd068665702872ea7119e874c94.js",
+    "precache-manifest.14f80c09321fc2e9ad6499991940db97.js": "/chernilnitza/precache-manifest.14f80c09321fc2e9ad6499991940db97.js",
     "service-worker.js": "/chernilnitza/service-worker.js",
     "static/js/2.48a96956.chunk.js.LICENSE.txt": "/chernilnitza/static/js/2.48a96956.chunk.js.LICENSE.txt",
     "static/media/BANNER1.png": "/chernilnitza/static/media/BANNER1.946eabc0.png",
@@ -49,6 +49,6 @@
   "entrypoints": [
     "static/js/runtime-main.abdc1920.js",
     "static/js/2.48a96956.chunk.js",
-    "static/js/main.65c683ac.chunk.js"
+    "static/js/main.5217b1a2.chunk.js"
   ]
 }
