@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "966ec9ddb421a7746421d6f0072b3063",
+    "revision": "54e304f1cb9a79d967b04325c8606332",
     "url": "/chernilnitza/index.html"
   },
   {
-    "revision": "8e3d234e9ca40900a6d2",
-    "url": "/chernilnitza/static/js/2.438501e7.chunk.js"
+    "revision": "93e633d3fd4467f41b56",
+    "url": "/chernilnitza/static/js/2.48a96956.chunk.js"
   },
   {
     "revision": "216e537bacc64f9dbaabd26649a9ab95",
-    "url": "/chernilnitza/static/js/2.438501e7.chunk.js.LICENSE.txt"
+    "url": "/chernilnitza/static/js/2.48a96956.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "57e3cb09ddfb4d5c180b",
-    "url": "/chernilnitza/static/js/main.ff29a619.chunk.js"
+    "revision": "3e4d2585729736422cdb",
+    "url": "/chernilnitza/static/js/main.65c683ac.chunk.js"
   },
   {
     "revision": "9576fb28d8b5f44588e4",
@@ -106,10 +106,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f9c4ccae17ad9ab721790efe458b0c4c",
     "url": "/chernilnitza/static/media/logoAboutUs.f9c4ccae.svg"
-  },
-  {
-    "revision": "888e07a81b9d6fd90cf1b30a340e447d",
-    "url": "/chernilnitza/static/media/logoFooter.888e07a8.svg"
   },
   {
     "revision": "604340f7cd798a15e00dd49ceffa9ae6",
