@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4f4ec2a03b35bf6f1c10f9d0c1194d6d",
+    "revision": "e8ed2b531a76ceba732b7c6448dae837",
     "url": "/chernilnitza/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/chernilnitza/static/js/2.48a96956.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "23f7579b4acd9772c9a4",
-    "url": "/chernilnitza/static/js/main.d0f10762.chunk.js"
+    "revision": "809b578714ad5abebfec",
+    "url": "/chernilnitza/static/js/main.0d02a67e.chunk.js"
   },
   {
     "revision": "9576fb28d8b5f44588e4",
