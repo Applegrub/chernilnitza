@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/chernilnitza/static/js/main.1205cc89.chunk.js",
-    "main.js.map": "/chernilnitza/static/js/main.1205cc89.chunk.js.map",
+    "main.js": "/chernilnitza/static/js/main.ff29a619.chunk.js",
+    "main.js.map": "/chernilnitza/static/js/main.ff29a619.chunk.js.map",
     "runtime-main.js": "/chernilnitza/static/js/runtime-main.abdc1920.js",
     "runtime-main.js.map": "/chernilnitza/static/js/runtime-main.abdc1920.js.map",
     "static/js/2.438501e7.chunk.js": "/chernilnitza/static/js/2.438501e7.chunk.js",
     "static/js/2.438501e7.chunk.js.map": "/chernilnitza/static/js/2.438501e7.chunk.js.map",
     "index.html": "/chernilnitza/index.html",
-    "precache-manifest.584bbca8a52a81c2b2ea7ad346ceb1e7.js": "/chernilnitza/precache-manifest.584bbca8a52a81c2b2ea7ad346ceb1e7.js",
+    "precache-manifest.f30d6e82f958e532c91ecfe5d753fb51.js": "/chernilnitza/precache-manifest.f30d6e82f958e532c91ecfe5d753fb51.js",
     "service-worker.js": "/chernilnitza/service-worker.js",
     "static/js/2.438501e7.chunk.js.LICENSE.txt": "/chernilnitza/static/js/2.438501e7.chunk.js.LICENSE.txt",
     "static/media/BANNER1.png": "/chernilnitza/static/media/BANNER1.946eabc0.png",
@@ -50,6 +50,6 @@
   "entrypoints": [
     "static/js/runtime-main.abdc1920.js",
     "static/js/2.438501e7.chunk.js",
-    "static/js/main.1205cc89.chunk.js"
+    "static/js/main.ff29a619.chunk.js"
   ]
 }
