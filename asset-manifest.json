@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.js": "/chernilnitza/static/js/main.1b44567f.chunk.js",
-    "main.js.map": "/chernilnitza/static/js/main.1b44567f.chunk.js.map",
+    "main.js": "/chernilnitza/static/js/main.1205cc89.chunk.js",
+    "main.js.map": "/chernilnitza/static/js/main.1205cc89.chunk.js.map",
     "runtime-main.js": "/chernilnitza/static/js/runtime-main.abdc1920.js",
     "runtime-main.js.map": "/chernilnitza/static/js/runtime-main.abdc1920.js.map",
-    "static/js/2.b9a9ab58.chunk.js": "/chernilnitza/static/js/2.b9a9ab58.chunk.js",
-    "static/js/2.b9a9ab58.chunk.js.map": "/chernilnitza/static/js/2.b9a9ab58.chunk.js.map",
+    "static/js/2.438501e7.chunk.js": "/chernilnitza/static/js/2.438501e7.chunk.js",
+    "static/js/2.438501e7.chunk.js.map": "/chernilnitza/static/js/2.438501e7.chunk.js.map",
     "index.html": "/chernilnitza/index.html",
-    "precache-manifest.8fdd89a099ea9f67fb7ea9dda9de5767.js": "/chernilnitza/precache-manifest.8fdd89a099ea9f67fb7ea9dda9de5767.js",
+    "precache-manifest.584bbca8a52a81c2b2ea7ad346ceb1e7.js": "/chernilnitza/precache-manifest.584bbca8a52a81c2b2ea7ad346ceb1e7.js",
     "service-worker.js": "/chernilnitza/service-worker.js",
-    "static/js/2.b9a9ab58.chunk.js.LICENSE.txt": "/chernilnitza/static/js/2.b9a9ab58.chunk.js.LICENSE.txt",
+    "static/js/2.438501e7.chunk.js.LICENSE.txt": "/chernilnitza/static/js/2.438501e7.chunk.js.LICENSE.txt",
     "static/media/BANNER1.png": "/chernilnitza/static/media/BANNER1.946eabc0.png",
     "static/media/BANNER2.png": "/chernilnitza/static/media/BANNER2.e0479cef.png",
     "static/media/BANNER3.png": "/chernilnitza/static/media/BANNER3.6826453b.png",
     "static/media/Good1.png": "/chernilnitza/static/media/Good1.16ed0e9b.png",
     "static/media/IG.svg": "/chernilnitza/static/media/IG.407f2537.svg",
-    "static/media/Inks.svg": "/chernilnitza/static/media/Inks.bd36ab9e.svg",
+    "static/media/Inks.svg": "/chernilnitza/static/media/Inks.20146d5c.svg",
     "static/media/Post1.svg": "/chernilnitza/static/media/Post1.b607478e.svg",
     "static/media/Post2.svg": "/chernilnitza/static/media/Post2.7f7f2d05.svg",
     "static/media/Post3.svg": "/chernilnitza/static/media/Post3.94977b0a.svg",
@@ -49,7 +49,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.abdc1920.js",
-    "static/js/2.b9a9ab58.chunk.js",
-    "static/js/main.1b44567f.chunk.js"
+    "static/js/2.438501e7.chunk.js",
+    "static/js/main.1205cc89.chunk.js"
   ]
 }

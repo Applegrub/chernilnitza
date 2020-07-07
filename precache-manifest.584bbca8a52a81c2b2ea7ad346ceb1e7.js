@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "990772724456edb6c8badf71c4c78b41",
+    "revision": "96b0ed45eab8b296a3d0a11331706404",
     "url": "/chernilnitza/index.html"
   },
   {
-    "revision": "936bc635b1f36eb2093a",
-    "url": "/chernilnitza/static/js/2.b9a9ab58.chunk.js"
+    "revision": "8e3d234e9ca40900a6d2",
+    "url": "/chernilnitza/static/js/2.438501e7.chunk.js"
   },
   {
     "revision": "216e537bacc64f9dbaabd26649a9ab95",
-    "url": "/chernilnitza/static/js/2.b9a9ab58.chunk.js.LICENSE.txt"
+    "url": "/chernilnitza/static/js/2.438501e7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "302612bdac71cef95266",
-    "url": "/chernilnitza/static/js/main.1b44567f.chunk.js"
+    "revision": "a6cae7064f1d7801143d",
+    "url": "/chernilnitza/static/js/main.1205cc89.chunk.js"
   },
   {
     "revision": "9576fb28d8b5f44588e4",
@@ -40,8 +40,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/chernilnitza/static/media/IG.407f2537.svg"
   },
   {
-    "revision": "bd36ab9e67f84ee75613432803c858a4",
-    "url": "/chernilnitza/static/media/Inks.bd36ab9e.svg"
+    "revision": "20146d5ceccce23962dd44c71f04d9d8",
+    "url": "/chernilnitza/static/media/Inks.20146d5c.svg"
   },
   {
     "revision": "b607478e0ed978e2655976f7f3fc49cb",
