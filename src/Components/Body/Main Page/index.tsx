@@ -75,14 +75,11 @@ border-radius: 20px;
 border: 2px solid #000000;
 box-sizing: border-box;
 margin: 10px 10px 30px 10px;
+@media screen and (max-width: 1280px){
+display: none;
+}
 }
 .active {
-width: 20px;
-height: 20px;
-border-radius: 20px;
-border: 2px solid #000000;
-box-sizing: border-box;
-margin: 10px 10px 30px 10px;
 background: black;
 }
 `
@@ -125,6 +122,9 @@ letter-spacing: 0.04em;
 text-transform: uppercase;
 color: #000000;
 text-align: center;
+@media screen and (max-width: 1280px){
+font-size: 50px;
+}
 `
 const AboutUsPosition = styled.div`
 display: flex;

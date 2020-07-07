@@ -33,7 +33,7 @@ const Head:React.FunctionComponent = () =>{
                         ИСПОЛЬЗУЙ ЧЕРНИЛА, ЕСЛИ СИЛЬНО МИЛО
                     </InksText>
                 </Inks>
-                <CartPosition css = {css`@media (max-width: 1556px){display:none};`}>
+                <CartPosition>
                     <Cart goodsCount={1}/>
                 </CartPosition>
                 <Faq><img src={faq} alt="FAQ"/></Faq>
@@ -90,12 +90,15 @@ margin-left: 5%;
 const Inks = styled.div`
 position: absolute;
 background: url(${inks}) no-repeat;
-left: 47.29%;
+left: 45%;
 top: 47%;
 width: 706px;
 height: 253px;
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1280px) {
 left: 34.48%;
+}
+@media screen and (max-width: 1080px) {
+left: 31%;
 }
 `
 const InksText = styled.div`
@@ -125,12 +128,24 @@ const CartPosition = styled.div`
 position: fixed;
 left: 87%;
 top: 425px;
+@media (max-width: 1556px){
+left: 90%;
+}
+@media (max-width: 1450px){
+left: 93%;
+}
+@media (max-width: 1347px){display:none}
 `
 
 const Faq = styled.div`
-position: fixed;
+position: absolute;
 top: 923px;
 left: 87%;
-@media screen and (max-width: 1556px) {
-display: none;
+@media (max-width: 1556px){
+left: 90%;
+}
+@media (max-width: 1450px){
+left: 93%;
+}
+@media (max-width: 1347px){display:none
 }`

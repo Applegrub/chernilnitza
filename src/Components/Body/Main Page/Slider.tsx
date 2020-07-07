@@ -47,7 +47,7 @@ export default Slideshow;
 const SlideContainer = styled.div`
 width: 1144px;
 @media screen and (max-width: 1280px){
-width: 80%;
+width: 936px;
 }
 `
 const EachFade = styled.div`
@@ -64,7 +64,4 @@ height: 407px;
 }}
 `
 const Indicator = styled.div`
-@media screen and (max-width: 1280px){
-display: none;
-}
 `
